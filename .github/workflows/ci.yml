@@ -31,4 +31,5 @@ jobs:
       - name: Verify app signature and architectures
         run: |
           codesign --verify --deep --strict build/Greenpad.app
-          lipo build/Greenpad.app/Contents/MacOS/Greenpad -verify_arch arm64 x86_64
+          xcrun lipo build/Greenpad.app/Contents/MacOS/Greenpad -verify_arch arm64
+          xcrun lipo build/Greenpad.app/Contents/MacOS/Greenpad -verify_arch x86_64
