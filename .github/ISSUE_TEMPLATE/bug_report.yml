@@ -1,0 +1,21 @@
+name: Bug report
+description: Report an editing, saving, or interface problem
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include steps to reproduce and what you expected. Do not include private files.
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: macOS version and Greenpad commit or version
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal example or screenshot
+      description: Redact private paths, credentials, and document contents.

@@ -1,0 +1,10 @@
+name: Feature request
+description: Suggest an improvement to everyday text editing
+body:
+  - type: textarea
+    id: usecase
+    attributes:
+      label: What editing task would this improve?
+      description: Describe the problem and an example of the desired behavior.
+    validations:
+      required: true
